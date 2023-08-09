@@ -1,0 +1,108 @@
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  } 
+
+body {
+  display: flex;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: rgba(235, 235, 235, 0.759);
+}
+
+.background {
+  position: relative; 
+  top: 0; 
+  left: 0; 
+  height: 33vh; 
+  width: 100vw; 
+  background-image: url("bg.jpg"); 
+  background-position: center center; 
+  z-index:-10; 
+  height: 100vh;
+  width: 40vw;
+}
+
+h2 {
+  color:rgb(221, 221, 221);
+  background-color: rgba(135, 135, 135, 0.414);
+  background-size: 150%;
+  margin: 200px 0px;
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 > img {
+  width: 50px;
+}
+
+form {
+  flex-wrap: wrap;
+  flex: auto;
+  font-size: 1.1em;
+  color: rgb(52, 52, 52);
+  justify-content: center;
+  font-style: italic;
+}
+
+
+p:first-of-type {
+  margin-top: 200px;
+}
+
+p {
+  font-size: 2em;
+  margin: 50px;
+}
+
+legend {
+  flex-basis: 100%;
+  float:left;
+  font-size: 1.3em;
+}
+
+fieldset {
+ border: 0px;
+ flex-basis: content;
+ box-shadow: 2px 2px 2px 3px #d3d3d3;
+ padding: 5px;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+
+button {
+  width: 10%;
+  height: 3em;
+  color: white;
+  font-size: 14px;
+  background-color: rgba(27, 113, 189, 0.897);
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: rgb(128, 128, 188);
+}
+
+.tip,
+.tip > a {
+  font-size: 1.2em;
+  color: grey;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 5px;
+  flex-basis: 33%;
+  
+}
+
+.form-row,
+legend,
+button {
+  margin: 10px 50px;
+}
