@@ -1,36 +1,55 @@
-* { 
-  box-sizing: border-box; 
-  margin: 0; 
-  padding: 0; 
-  } 
+@font-face {
+  font-family: custom;
+  src: url("./font.otf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   display: flex;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background-color: rgba(235, 235, 235, 0.759);
+  background-color: rgba(235, 235, 235, 0.759);
+  min-height: 100vh;
 }
 
 .background {
-  position: relative; 
-  top: 0; 
-  left: 0; 
-  height: 33vh; 
-  width: 100vw; 
-  background-image: url("bg.jpg"); 
-  background-position: center center; 
-  z-index:-10; 
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url("bg.jpg");
+  background-position: center center;
+  background-size: 70em;
   height: 100vh;
   width: 40vw;
+  display: flex;
+  flex-direction: column;
 }
 
-h2 {
-  color:rgb(221, 221, 221);
-  background-color: rgba(135, 135, 135, 0.414);
+.background > p {
+  align-self: center;
+  margin: 350px 0px 0px;
+  color: whitesmoke;
+  font-size: 15px;
+  flex: 1;
+}
+
+.background > p > a {
+  color: whitesmoke;
+}
+
+.background > h2 {
+  color: rgb(221, 221, 221);
+  background-color: rgba(214, 214, 214, 0.414);
   background-size: 150%;
   margin: 200px 0px;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
+  font-family: custom, sans-serif;
 }
 
 h2 > img {
@@ -46,34 +65,33 @@ form {
   font-style: italic;
 }
 
-
-p:first-of-type {
+main > p:first-of-type {
   margin-top: 200px;
 }
 
-p {
+main > p {
   font-size: 2em;
   margin: 50px;
 }
 
 legend {
   flex-basis: 100%;
-  float:left;
+  float: left;
   font-size: 1.3em;
 }
 
 fieldset {
- border: 0px;
- flex-basis: content;
- box-shadow: 2px 2px 2px 3px #d3d3d3;
- padding: 5px;
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
+  border: 0px;
+  flex-basis: content;
+  box-shadow: 2px 2px 2px 3px #d3d3d3;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 button {
-  width: 10%;
+  width: 10em;
   height: 3em;
   color: white;
   font-size: 14px;
@@ -98,7 +116,6 @@ button:hover {
   flex-direction: column;
   margin: 10px 5px;
   flex-basis: 33%;
-  
 }
 
 .form-row,
